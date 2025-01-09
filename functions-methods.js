@@ -18,7 +18,8 @@ function getEmailDomain(email) {
 let emailadresses = ['n.eeken@novi-education.nl', 't.mellink@novi.nl', 'a.wiersma@outlook.com'];
 
 for (let i = 0; i < emailadresses.length; i++) {
-    console.log(getEmailDomain(emailadresses[i]));
+    const outcome = getEmailDomain(emailadresses[i])
+    console.log(outcome);
 }
 
 
@@ -48,7 +49,8 @@ function typeOfEmail (email) {
 emailadresses = ['n.eeken@novi-education.nl', 't.mellink@novi.nl', 'novi.nlaapjesk@outlook.com', 'a.wiersma@outlook.com']
 
 for (let i = 0; i < emailadresses.length; i++) {
-    console.log(typeOfEmail(emailadresses[i]));
+    const outcome = typeOfEmail(emailadresses[i]);
+    console.log(outcome);
 }
 
 
@@ -78,5 +80,6 @@ function checkEmailValidity (email) {
 emailadresses = ['n.eeken@novi.nl', 'tessmellink@novi.nl', 'n.eekenanovi.nl', 'n.eeken@novinl.', 'tessmellink@novi,nl']
 
 for (let i = 0; i < emailadresses.length; i++) {
-    console.log(checkEmailValidity(emailadresses[i]));
+    const outcome = checkEmailValidity(emailadresses[i]);
+    console.log(outcome);
 }
