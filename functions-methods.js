@@ -9,7 +9,18 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
+console.log('Opdracht 1');
 
+function getEmailDomain(email) {
+    return email.split('@')[1];
+}
+
+let emailadresses = ['n.eeken@novi-education.nl', 't.mellink@novi.nl', 'a.wiersma@outlook.com'];
+
+for (let i = 0; i < emailadresses.length; i++) {
+    const outcome = getEmailDomain(emailadresses[i])
+    console.log(outcome);
+}
 
 
 /* Opdracht  2 */
@@ -20,6 +31,27 @@
 // typeOfEmail("novi.nlaapjesk@outlook.com") geeft geeft "Extern" <-- deze moet het ook doen!
 // typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 
+console.log('Opdracht 2');
+
+function typeOfEmail (email) {
+    const domain = email.split('@')[1];
+
+    switch (domain) {
+        case 'novi-education.nl':
+            return 'Student'
+        case 'novi.nl':
+            return 'Medewerker'
+        default:
+            return 'Extern'
+    }
+}
+
+emailadresses = ['n.eeken@novi-education.nl', 't.mellink@novi.nl', 'novi.nlaapjesk@outlook.com', 'a.wiersma@outlook.com']
+
+for (let i = 0; i < emailadresses.length; i++) {
+    const outcome = typeOfEmail(emailadresses[i]);
+    console.log(outcome);
+}
 
 
 /* Opdracht  3 */
@@ -34,3 +66,20 @@
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+console.log('Opdracht 3');
+
+function checkEmailValidity (email) {
+    let isValid = true;
+    if (!email.includes('@')) isValid = false;
+    if (email.includes(',')) isValid = false;
+    if (email.charAt(email.length -1) === '.') isValid = false;
+    return isValid;
+}
+
+emailadresses = ['n.eeken@novi.nl', 'tessmellink@novi.nl', 'n.eekenanovi.nl', 'n.eeken@novinl.', 'tessmellink@novi,nl']
+
+for (let i = 0; i < emailadresses.length; i++) {
+    const outcome = checkEmailValidity(emailadresses[i]);
+    console.log(outcome);
+}
