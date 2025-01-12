@@ -18,12 +18,12 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // ---- Verwachte uitkomst: 6
 
 /*
-* declareer een local variabelen voor het aantal cum laude grades
-* itereer door de grades heen
-* maak een if statement met als voorwaarde dat het cijfer hoger of gelijk aan 8 moet zijn.
-* als de voorwaarde waar is moet er 1 bij het aan cum laude grade worden opgeteld.
-* return het aantal cum laude grade
-* */
+Declareer een local variabelen voor het aantal cum laude grades.
+itereer door de grades heen.
+Maak een if statement met als voorwaarde dat het cijfer hoger of gelijk aan 8 moet zijn.
+Als de voorwaarde waar is moet er 1 bij het aan cum laude grade worden opgeteld.
+Return het aantal cum laude grade.
+*/
 
 let numberOfCumLaudeGrades = 0;
 
@@ -78,10 +78,10 @@ console.log(outcome);
 // ---- Verwachte uitkomst: 6.642857142857143
 
 /*
-maak een variable aan voor het totale cijfer
-itereer door de gardes en tel elke grade op bij het totale cijfer
-deel het totaal door het aantal grades
- */
+Maak een variable aan voor het totale cijfer.
+Itereer door de gardes en tel elke grade op bij het totale cijfer.
+Deel het totaal door het aantal grades.
+*/
 
 let tempNumberOfGrades = 0;
 
@@ -124,8 +124,6 @@ anOtherListWithGrades = [8, 9, 4, 6, 10];
 outcome = averageGrade(anOtherListWithGrades);
 console.log(outcome);
 
-
-
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
@@ -145,7 +143,6 @@ anOtherListWithGrades = [8, 9, 4, 6, 10];
 outcome = gradeInTwoDecimals(averageGrade(anOtherListWithGrades));
 console.log(outcome);
 
-
 /* Bonusopdracht: hoogste cijfer */
 
 /* 3a: Script schrijven  */
@@ -161,7 +158,6 @@ console.log(outcome);
 Declareer een variabele highestGrade en zet hem op 0
 Itereer door de array vergelijk in elke iteratie of het getal hoger is dan de waarde van highestGrade.
 Zo ja, vervang de waarde van highestGrade met de waarde van de index van de array.
-
  */
 
 let highestGradeWithoutAFunction = 0;
